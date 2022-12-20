@@ -1,0 +1,38 @@
+@import "styles/common/_var";
+
+.titrBox{
+    background-image: url('./includes/flower-icon.svg') ;
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+    background-position: top right;
+}
+
+.shadowSlider{
+    background: linear-gradient(90deg, rgba(25, 26, 27, 0.6) 0%, rgba(25, 26, 27, 0.01) 100%);
+    z-index:2;
+}
+
+.summaryText{
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 2; 
+   -webkit-box-orient: vertical;
+   min-height: 112px;
+   
+   @media (max-width: 1500px) and (min-width: 1024px) {
+    min-height: 110px;
+  }
+  
+  @media (min-width: 1500px) {
+    min-height: auto;
+  }
+}
+
+.headerText{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; 
+  -webkit-box-orient: vertical;
+}

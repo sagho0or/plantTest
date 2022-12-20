@@ -1,0 +1,59 @@
+@import "styles/common/_var";
+.swiper-HC-pagination-navigation{
+  .swiper-button-next {
+    @apply w-4;
+    background-image: url(../../components/commonPage/includes/active.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    &.swiper-button-disabled{
+      @apply w-4;
+      background-image: url(../../components/commonPage/includes/noneActive.svg);
+      transform: rotate(180deg);
+    }
+  }
+  .swiper-button-next::after {
+    @apply hidden;
+  }
+
+  .swiper-button-prev {
+    @apply w-4;
+    background-image: url(../../components/commonPage/includes/active.svg);
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    &.swiper-button-disabled{
+      @apply w-4;
+      background-image: url(../../components/commonPage/includes/noneActive.svg);
+      transform: rotate(0deg);
+    }
+  }
+  .swiper-button-prev::after {
+    @apply hidden;
+  }
+
+  .swiper-container{
+    @apply pb-20;
+  }
+
+  .swiper-pagination-bullet{
+    @apply leading-9 text-xl font-bold text-center w-8 h-8 mx-4;
+  }
+  .swiper-pagination-bullet-active{
+    background-color: $warning-main;
+    color: #000;
+  }
+  &.dynamic-guideline{
+    .swiper-pagination{
+      text-align:left;
+    }
+    .swiper-pagination-bullet{
+        @apply w-4 h-4;
+    }
+    .swiper-container{
+      @apply pb-2;
+    }
+  
+  }
+}

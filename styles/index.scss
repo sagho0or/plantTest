@@ -1,0 +1,15 @@
+@import "common/_var";
+/* SWIPER */
+@import 'swiper/swiper.scss';
+@import 'swiper/components/navigation/navigation.scss';
+@import 'swiper/components/pagination/pagination.scss';
+@import 'nprogress/nprogress.css';
+// Common
+@import "common/_core";
+@import 'common/notifier.scss';
+@import "common/_core.responsive";
+@import "common/_colors";
+@import "common/swiper.custom";
+@import "common/_transition.mixin";
+
+

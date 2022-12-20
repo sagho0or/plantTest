@@ -1,0 +1,9 @@
+ @mixin transitionRightToLeft($duration, $delay, $finalPosition, $finalOpacity) {
+   -webkit-transition: all $duration ease-in-out;
+   -moz-transition: all $duration ease-in-out;
+   -ms-transition: all $duration ease-in-out;
+   -o-transition: all $duration ease-in-out;
+    transition-delay: $delay;
+   opacity: $finalOpacity;
+   transform: translateX($finalPosition);
+ }

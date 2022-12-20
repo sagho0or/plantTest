@@ -1,0 +1,306 @@
+@import "_var";
+
+// ************************** reset CSS ****************************
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+nav,
+output,
+ruby,
+section,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q,
+blockquote {
+  quotes: none;
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+// ******************************* end- reset CSS **************************
+
+.bg-gradiant {
+  background: radial-gradient(ellipse at 16% -5%, rgba(69, 72, 77, 1) 2% 0%, rgba(37, 38, 40, 0.5) 24%), radial-gradient(ellipse at bottom right, rgba(74, 77, 82, 1) 5%, rgba(37, 38, 40, 1));
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box !important;
+}
+
+a {
+  text-decoration: none;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  //background-color: #f4f4f4 !important;
+}
+
+// body
+html {
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  direction: rtl;
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-family: $main-font-family-light;
+  text-align: right;
+  font-size: 1rem;
+  color: $main-text-color;
+  overflow-x: hidden;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  min-height: 85vh;
+  margin-top: 0;
+  flex-flow: column wrap;
+  transition: margin-top 250ms;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.z-index-2 {
+  z-index: 2;
+}
+
+.noselect,
+.noselect * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.list-style-none {
+  list-style-type: none;
+}
+
+.ltr {
+  direction: ltr !important;
+}
+
+.rtl {
+  direction: rtl !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-family: $main-font-family-bold;
+}
+
+.margin-r-auto {
+  margin-right: auto;
+}
+
+button {
+  transition: all 0.3s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+img {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.normal-font {
+  font-family: $main-font-family;
+}
+
+.light-font {
+  font-family: $main-font-family-light;
+}
+
+.bold-font {
+  font-family: $main-font-family-bold;
+}
+
+.z-00 {
+  z-index: -10;
+}
+
+.main-container{
+  @apply container xl:px-24 px-5 mx-auto;
+}
+
+@media (max-width: 640px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+#nprogress .bar {
+  background: $primary-main !important;
+}
+
+.line-clamp-1{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; 
+  -webkit-box-orient: vertical;
+}
+
+.line-clamp-4{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; 
+  -webkit-box-orient: vertical;
+}
+
+.max-h-lot{
+  max-height: 100rem;
+}
+
+.bulletDescription {
+  line-height: 2rem;
+  list-style: disc;
+  &::marker{
+    color: $warning-main
+  }
+}

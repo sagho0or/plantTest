@@ -1,0 +1,14 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    "react-hot-loader/babel",
+    ["inline-import-data-uri", {
+      "extensions": [
+        ".html",
+        ".jpg",
+        ".png",
+        ".svg"
+      ]
+    }]
+  ]
+}

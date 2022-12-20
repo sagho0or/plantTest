@@ -1,0 +1,12 @@
+@import "styles/common/_var";
+
+.servicesBox:hover {
+    cursor: pointer;
+    box-shadow: 0px 12px 80px rgba(0, 0, 0, 0.41);
+}
+@media (max-width: 768px) {
+    .servicesBox {
+        cursor: pointer;
+        box-shadow: 0px 5px 44px rgba(0, 0, 0, 0.3);
+    }
+}

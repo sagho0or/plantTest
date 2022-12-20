@@ -1,0 +1,18 @@
+@import "styles/common/_var";
+
+.not-found--container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  align-items: center;
+}
+.not-found--bg{
+  background: url(/images/404.png) no-repeat center top;
+  min-height: 100vh;
+  background-size: contain;
+}
+
+.not-found--logo{
+  width: 100%;
+}
